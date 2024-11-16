@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <a href="#">
+      <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+    </a>
+  </div>
+
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="fa fa-home"></span>
+          <span>Home</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span class="fa fa-search"></span>
+          <span>Search</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span class="fa fas fa-book"></span>
+          <span>Your Library</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="navigation">
+    <ul>
+      <li>
+        <a href="#">
+          <span class="fa fas fa-plus-square"></span>
+          <span>Create Playlist</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span class="fa fas fa-heart"></span>
+          <span>Liked Songs</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="policies">
+    <ul>
+      <li>
+        <a href="#">Cookies</a>
+      </li>
+      <li>
+        <a href="#">Privacy</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="topbar">
+    <div class="prev-next-buttons">
+      <button type="button" class="fa fas fa-chevron-left"></button>
+      <button type="button" class="fa fas fa-chevron-right"></button>
+    </div>
+
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="#">Premium</a>
+        </li>
+        <li>
+          <a href="#">Support</a>
+        </li>
+        <li>
+          <a href="#">Download</a>
+        </li>
+        <li class="divider">|</li>
+        <li>
+          <a href="#">Sign Up</a>
+        </li>
+      </ul>
+      <button type="button">Log In</button>
+    </div>
+  </div>
+<!-- Block for Pop Songs -->
+<div class="spotify-playlists">
+  <h2>Pop Songs</h2>
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='download.jpeg') }}" alt="Pop Songs">
+      <h4>Pop Hits</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Block for Sad Songs -->
+<div class="spotify-playlists">
+  <h2>Sad Songs</h2>
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='images.jpeg') }}" alt="Sad Songs">
+      <h4>Sad Ballads</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Add more blocks for other types of songs -->
+<!-- Ensure to use url_for for each image src -->
+
+<!-- Block for Rock Songs -->
+<div class="spotify-playlists">
+  <h2>Rock Songs</h2>
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='images (1).jpeg') }}" alt="Rock Songs">
+      <h4>Rock Anthems</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Block for Hip-hop Songs -->
+<div class="spotify-playlists">
+  <h2>Hip-hop Songs</h2>
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='download (1).jpeg') }}" alt="Hip-hop Songs">
+      <h4>Hip-hop Hits</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Block for Jazz Songs -->
+<div class="spotify-playlists">
+  <h2>Jazz Songs</h2>
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='download (2).jpeg') }}" alt="Jazz Songs">
+      <h4>Jazz Classics</h4>
+    </div>
+  </div>
+</div>
+
+<!-- Block for Classical Songs -->
+<div class="spotify-playlists">
+  <h2>Classical Songs</h2>
+  <div class="list">
+    <div class="item">
+      <img src="{{ url_for('static', filename='download (3).jpeg') }}" alt="Classical Songs">
+      <h4>Classical Masterpieces</h4>
+    </div>
+  </div>
+</div>
+
+  <div class="preview">
+    <div class="text">
+      <h6>Preview of Spotify</h6>
+      <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+    </div>
+    <div class="button">
+      <button type="button">Sign up free</button>
+    </div>
+  </div>
+</div>
+
+<script
+  src="https://kit.fontawesome.com/23cecef777.js"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
+

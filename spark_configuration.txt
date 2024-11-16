@@ -1,0 +1,13 @@
+# Spark Configuration
+
+# Spark application settings
+spark.app.name=MusicRecommendation
+spark.master=local[*]
+
+# Spark session settings
+spark.executor.memory=4g
+spark.driver.memory=4g
+spark.driver.maxResultSize=2g
+
+# Spark UI settings
+spark.ui.port=4040
